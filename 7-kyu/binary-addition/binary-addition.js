@@ -1,5 +1,3 @@
 function addBinary(a,b) {
-  const sum = a + b;
-  
-  return sum.toString(2);
+  return (a+b).toString(2)
 }
