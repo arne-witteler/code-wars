@@ -1,9 +1,4 @@
 function maxDiff(list) {
-  if (list.length <=1) {
-    return 0;
-  } else {
-    const sortedList = list.sort((a, b) => a - b)
-    
-    return sortedList[sortedList.length-1] - sortedList[0];
-  }
+  if(!list.length) return 0;
+  return Math.max(...list) - Math.min(...list);
 };
